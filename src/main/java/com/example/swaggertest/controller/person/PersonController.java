@@ -1,8 +1,8 @@
-package com.example.swaggertest.controller;
+package com.example.swaggertest.controller.person;
 
-import com.example.swaggertest.model.PersonDto;
-import com.example.swaggertest.model.PersonOutputDto;
-import com.example.swaggertest.service.PersonService;
+import com.example.swaggertest.model.person.PersonDto;
+import com.example.swaggertest.model.person.PersonOutputDto;
+import com.example.swaggertest.service.person.PersonService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

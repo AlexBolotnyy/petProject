@@ -1,12 +1,10 @@
-package com.example.swaggertest.service;
+package com.example.swaggertest.service.person;
 
-import com.example.swaggertest.entity.Person;
-import com.example.swaggertest.model.PersonDto;
-import com.example.swaggertest.model.PersonOutputDto;
-import com.example.swaggertest.model.mapper.persone.PersonMapper;
-import com.example.swaggertest.repository.PersonRepository;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import com.example.swaggertest.entity.person.Person;
+import com.example.swaggertest.model.person.PersonDto;
+import com.example.swaggertest.model.person.PersonOutputDto;
+import com.example.swaggertest.model.person.mapper.PersonMapper;
+import com.example.swaggertest.repository.person.PersonRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

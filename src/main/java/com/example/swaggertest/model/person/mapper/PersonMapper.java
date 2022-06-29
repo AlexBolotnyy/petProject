@@ -1,7 +1,7 @@
-package com.example.swaggertest.model.mapper.persone;
+package com.example.swaggertest.model.person.mapper;
 
-import com.example.swaggertest.entity.Person;
-import com.example.swaggertest.model.PersonOutputDto;
+import com.example.swaggertest.entity.person.Person;
+import com.example.swaggertest.model.person.PersonOutputDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

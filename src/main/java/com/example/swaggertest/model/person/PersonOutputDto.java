@@ -1,4 +1,4 @@
-package com.example.swaggertest.model;
+package com.example.swaggertest.model.person;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
