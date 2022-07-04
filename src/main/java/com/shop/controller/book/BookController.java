@@ -6,6 +6,7 @@ import com.shop.entity.genre.GenreDto;
 import com.shop.model.book.BookDto;
 import com.shop.service.book.BookService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,7 +32,7 @@ public class BookController {
         bookService.saveBook(dto);
     }
 
-    @PostMapping("/get-genres")
+    @GetMapping("/get-genres")
     public List<EnumDto> getGenres() {
 
        return bookService.getGenres();

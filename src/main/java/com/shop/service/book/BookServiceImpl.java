@@ -41,10 +41,11 @@ public class BookServiceImpl implements BookService {
     @Override
     public List<EnumDto> getGenres() {
 
-        List<EnumDto> result = new ArrayList<>();
-        Arrays.stream(GenreName.values()).forEach(g ->
-                result.add(new EnumDto(g.name(), g.getTitle())));
-        return result;
+//        List<EnumDto> result = new ArrayList<>();
+//        Arrays.stream(GenreName.values()).forEach(g ->
+//                result.add(new EnumDto(g.name(), g.getTitle())));
+//        return result;
+        throw new RuntimeException("Тестовое сообщение");
     }
 
     private Genre getGenre(GenreName name) {
