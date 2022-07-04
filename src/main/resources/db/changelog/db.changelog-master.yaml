@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-lesson1.yaml
+  - changeSet:
+      id: 1
+      author: bolotnyi-ad
+      changes:
+        - createTable:
+            tableName: table_by_liquid_base
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: username
+                  type: varchar(50)
+                  constraints:
+                    unique: true
+                    nullable: false
+              - column:
+                  name: password
+                  type: varchar(512)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: varchar(50)
+              - column:
+                  name: last_name
+                  type: varchar(50)
+              - column:
+                  name: email
+                  type: varchar(50)
+
+#                    - include:
+#                        file: migrations/001-schema.sql
+#                    - include:
+#                        file: migrations/002-init.sql
+#                    - include:
+#                        file: migrations/003-changing-account-types.sql
